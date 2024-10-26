@@ -1,0 +1,109 @@
+/* Dashboard.css */
+
+.dashboard {
+  background-color: #f8f9fa;
+}
+
+.offcanvas-header {
+  background-color: #ff0000; /* Red header for the sidebar */
+  color: white;
+}
+
+.offcanvas-body {
+  background-color: #000; /* Black body for the sidebar */
+}
+
+.open_text {
+  color: #ffffff !important;
+  background-color: #ff0000 !important;
+}
+
+.open_text:hover {
+  background-color: #ffffff !important;
+  color: #ff0000 !important;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #ffffff;
+  color: #ff0000; /* Hover effect with brand red color */
+  font-weight: bold;
+}
+
+.dashboard-container {
+  padding: 20px;
+}
+
+.dashboard-content h2 {
+  color: #ff0000; /* Red accent color for headings */
+}
+
+.card {
+  background-color: white;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: #ff0000; /* Red color for book titles */
+}
+
+.card-text {
+  color: #000; /* Black text for the book description */
+}
+
+.btn-primary {
+  background-color: #ff0000 !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff !important; /* Darker red on hover */
+  color: #ff0000 !important;
+}
+
+.welcome_text {
+  font-size: 40px; /* Adjust size */
+  font-weight: bold;
+  color: #ffffff; /* Or match your brand color */
+  background-color: #ff0000;
+  border-radius: 15px;
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  padding-left: 35px;
+  opacity: 0;
+  transform: translateY(-50px); /* Slide in from top */
+  animation: slideIn 1.5s ease-out forwards; /* Animation settings */
+}
+
+@media (max-width: 768px) {
+  .welcome_text {
+    width: 100%;
+    font-size: 25px;
+  }
+}
+
+.welcome_text:hover {
+  background-color: #ffffff;
+  color: #ff0000;
+  border: 2px solid #ff0000;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); /* Start position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End position */
+  }
+}

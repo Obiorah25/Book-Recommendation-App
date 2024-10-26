@@ -1,0 +1,135 @@
+.book_card {
+  background-color: hsl(0, 50%, 5%) !important;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1rem;
+  text-align: center;
+  color: #f5f5f5;
+  width: 15rem;
+}
+
+@media (max-width: 768px) {
+  .book_card {
+    width: 93%;
+  }
+  .book_title {
+    font-size: 30px !important;
+  }
+  .book_author {
+    font-size: 20px !important;
+  }
+  .details_btn {
+    padding: 10px 100px !important;
+  }
+}
+
+.book_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+}
+
+.book_img {
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card_body {
+  padding: 10px;
+}
+
+/* Book title styling */
+.book_title {
+  font-size: 12px;
+  font-weight: bold;
+  /* margin: 15px 0; */
+  color: #f5f5f5 !important;
+}
+
+/* Book author styling */
+.book_author {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px !important;
+  color: #f5f5f5;
+}
+
+/* Button styling */
+.details_btn {
+  background-color: #ffffff !important;
+  color: #1a1a1d;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.details_btn:hover {
+  background-color: #ff0000 !important; /* Slightly darker yellow on hover */
+}
+
+.modal_body {
+  text-align: left !important; /* Align text to the left */
+}
+
+.modal_body p {
+  margin: 10px 0 !important;
+  color: #000000 !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  font-weight: 400;
+}
+
+.modal_btn {
+  background-color: #ff0000 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  cursor: pointer !important;
+  border-radius: 35px !important;
+  font-size: 16px !important;
+  border: 2px solid transparent !important;
+  transition: all 0.3s ease !important;
+}
+
+.modal_btn:hover {
+  color: #ff0000 !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: #ff0000 !important;
+}
+
+.search_btn {
+  background-color: rgba(222, 10, 10, 0.1) !important; /* Green */
+  border: none !important;
+  list-style-type: none !important;
+  color: #ff0000 !important;
+  padding: 8px !important;
+  width: 80% !important;
+  text-align: left !important;
+  font-size: 15px !important;
+  font-weight: 600;
+  text-transform: capitalize !important;
+  margin-bottom: 20px !important;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease !important;
+}
+
+.search_btn:hover {
+  background-color: #ff0000 !important; /* Change color on hover */
+  color: #ffffff !important;
+  transform: scale(
+    1.1
+  ) !important; /* Slightly enlarge the button on hover (in effect) */
+}
+
+.search:active {
+  transform: scale(
+    0.95
+  ); /* Slightly shrink the button when clicked (out effect) */
+}
